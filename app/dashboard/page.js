@@ -178,6 +178,7 @@ export default function DashboardPage() {
                 <div className="container">
                     <Link href="/" className="navbar-brand">Find<span>Any</span>Mail</Link>
                     <div className="navbar-links">
+                        <Link href="/docs" className="btn btn-ghost btn-sm" style={{ marginRight: 10 }}>API</Link>
                         <span style={{ fontSize: 14, color: 'var(--text-dim)' }}>{session?.user?.name}</span>
                         <button className="btn btn-ghost btn-sm" onClick={() => signOut()}>Sign Out</button>
                     </div>

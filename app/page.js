@@ -8,6 +8,7 @@ export default function Home() {
           <Link href="/" className="navbar-brand">Find<span>Any</span>Mail</Link>
           <div className="navbar-links">
             <Link href="/login">Login</Link>
+            <Link href="/docs" style={{ marginRight: 15, color: 'var(--text-dim)' }}>API</Link>
             <Link href="/login" className="btn btn-primary btn-sm">Get Started</Link>
           </div>
         </div>
