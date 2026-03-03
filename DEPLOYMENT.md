@@ -91,6 +91,7 @@ The script told you what to do next. Do this:
    cp .env.example .env.local
    nano .env.local
    # Fill in: NEXTAUTH_SECRET, ADMIN_PASSWORD, API_KEY
+   # Optional: OPENROUTER_API_KEY, OPENROUTER_MODEL, HUNTER_API_KEY
    # Ctrl+O to save, Ctrl+X to exit
    ```
 
@@ -108,3 +109,12 @@ The script told you what to do next. Do this:
    *   Run: `certbot --nginx -d tool.yourdomain.com`
 
 **Done!** visit `https://tool.yourdomain.com`
+
+
+## Updating After Initial Deploy
+
+Use the included script to pull, build, and restart:
+
+```bash
+APP_DIR=~/app APP_NAME=findanymail ./update_and_run.sh
+```
